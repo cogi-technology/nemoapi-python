@@ -1,0 +1,21 @@
+import platform
+__SYSTEM__ = platform.system()
+__ZERO_ADDRESS__= '0x0000000000000000000000000000000000000000'
+__ACCOUNT_NEMO_ADDRESS_PREFIX__ = 'NEMOx'
+__ACCOUNT_ETH_ADDRESS_PREFIX__ = '0x'
+__ACCOUNT_OIDC_ADDRESS_PREFIX__ = 'OIDCx'
+__AES_256CBC_HEAD__ = 'aes256cbc:'
+__ANONYMOUS__ = 'Anonymous'
+
+__VALID_STATUS__ = [
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    226
+]
