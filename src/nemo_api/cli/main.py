@@ -4,7 +4,7 @@ import cmd
 cmd.Cmd.prompt = '(nemoverse-sdk) '
 
 from nemo_api import __version__
-from nemo_api.cli import *
+from nemo_api.cli.dsa import dsa
 
 def show_version():
   return "{0}".format(__version__)

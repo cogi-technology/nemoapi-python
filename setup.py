@@ -9,6 +9,14 @@ from setuptools import setup, find_packages  # noqa: H301
 
 NAME = "nemo-api"
 VERSION = "2.0.0"
+REQUIRES = [
+    "urllib3 >= 1.26", 
+    "six >= 1.10",
+    "certifi",
+    "python_dateutil",
+    "aiohttp==3.7.4.post0",
+    "ujson==4.3.0",
+]
 # To install the library, run the following
 #
 # python setup.py install
@@ -21,10 +29,9 @@ with open('README.md', 'r', encoding='utf-8') as fh:
 
 setup(
     name=NAME,
-    description="NEMO API v2",
     author='NEMO Platform',
     author_email='tech@nemoverse.io',
-    description='NEMO-API PyPI (Python Package Index) Package',
+    description='NEMOVERSE-API-SDK PyPI (Python Package Index) Package',
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://gitlab.com/nemoverse/nemoapi-python',
@@ -56,6 +63,7 @@ setup(
         'dev': ['check-manifest'],
     },
     entry_points= {
-        'console_scripts': ['mycli={0}:cli']
-    }
+        'console_scripts': ['nemoversesdk=nemo_api.cli.main:main']
+    },
+    install_requires=REQUIRES
 )
