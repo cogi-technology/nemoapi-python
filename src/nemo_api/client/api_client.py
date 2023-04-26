@@ -232,13 +232,11 @@ class ApiClient(object):
         if not _return_http_data_only:
             return response_data
         
-        print(response_data)
-        
         if response_data is None or not isinstance(response_data, dict):
             raise ApiReponseError("invalid reponse {0}".format(response_data))
-        if response_data.get('status') != status.NORMAL.value or response_data.get('params') is None:
-            raise ApiReponseError(response_data)
-        if 'error' in response_data.get('params'):
+        if int(response_data.get('status')) < 0 \
+            or (response_data.get('params') is None and response_data.get('uuid') is None) \
+            or response_data.get('params', {}).get('error'):
             raise ApiReponseError(response_data)
         
         return_data = response_data
@@ -265,7 +263,10 @@ class ApiClient(object):
 
         # fetch data from response object
         try:
-            data = response['params']
+            if 'uuid' in response:
+                data = response['uuid']
+            else:
+                data = response['params']
         except Exception as e:
             data = response
 

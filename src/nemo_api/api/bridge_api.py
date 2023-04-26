@@ -24,7 +24,7 @@ class BridgeApi(object):
             method='POST',
             body=body_params,
             auth_settings=auth_settings,
-            response_type='list[dict]'
+            response_type='list[object]'
         )
         return res
 

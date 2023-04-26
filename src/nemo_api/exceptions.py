@@ -79,7 +79,7 @@ class ApiReponseError(NemoverseApiException, KeyError):
         if isinstance(resp, dict):
             self.status = resp.get('status')
             self.reason = resp.get('params')
-            if self.reason is not None:
+            if self.reason is not None and isinstance(self.reason, dict):
                 if self.reason.get('err'):
                     self.reason = self.reason.get('err')
                 elif self.reason.get('error'):
