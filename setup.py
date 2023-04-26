@@ -54,5 +54,8 @@ setup(
     python_requires='>=3.9',
     extras_require={
         'dev': ['check-manifest'],
+    },
+    entry_points= {
+        'console_scripts': ['mycli={0}:cli']
     }
 )
