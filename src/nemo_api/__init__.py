@@ -5,6 +5,8 @@ from __future__ import absolute_import
 
 __version__ = "2.0.0"
 
+from nemo_api.configuration import ApiConfiguration
+
 # import apis into sdk package
 from nemo_api.api.bridge_api import BridgeApi
 from nemo_api.api.hotwallet_api import HotwalletApi
