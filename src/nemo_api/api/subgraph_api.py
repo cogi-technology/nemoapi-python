@@ -10,7 +10,6 @@ class SubgraphApi(object):
         self.api_client = api_client
 
     async def call(self, params: dict):
-        #TODO: variables, query
         auth_settings = ['apiv2']
         res = await self.api_client.call_api(
             resource_path='/subgraph/call',
@@ -21,7 +20,6 @@ class SubgraphApi(object):
         return res
 
     async def getTotalVolume(self, params: dict):
-        #TODO: params is variables
         auth_settings = ['apiv2']
         res = await self.api_client.call_api(
             resource_path='/subgraph/getTotalVolume',

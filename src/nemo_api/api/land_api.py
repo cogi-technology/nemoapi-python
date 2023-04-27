@@ -130,7 +130,6 @@ class LandApi(object):
         return res
     
     async def request_cancelbuys(self, lands: list[dict]):
-        #TODO lands: list[{account, cid}]
         auth_settings = ['apiv2']
         body_params = { 'lands': lands }
         res = await self.api_client.call_api(

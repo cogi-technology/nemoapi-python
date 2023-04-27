@@ -33,11 +33,11 @@ class ApiClient(object):
         the API.
     :param cookie: a cookie to include in the header when making calls
         to the API
-    :param user_agent: TODO
-    :param timeout: TODO
-    :param max_failed: TODO
-    :param retried: TODO
-    :param poll_latency: TODO
+    :param user_agent: Identify the client
+    :param timeout: limit the amount of time that make http request
+    :param max_failed: the maximum number of retries allowed has been exceeded
+    :param retried: the number of retries for the HTTP request has failed
+    :param poll_latency: delay between HTTP retries
     """
 
     PRIMITIVE_TYPES = tuple([int, float, bool, bytes, six.text_type, six.integer_types, Decimal])
@@ -128,10 +128,7 @@ class ApiClient(object):
         _host=None,
         valid_status=None
     ):
-        #TODO
-        """Makes the HTTP request (synchronous) and returns deserialized data.
-
-        To make an async_req request, set the async_req parameter.
+        """Makes the HTTP request and returns deserialized data.
 
         :param resource_path: Path to method endpoint.
         :param method: Method to call.
@@ -139,32 +136,25 @@ class ApiClient(object):
         :param query_params: Query parameters in the url.
         :param header_params: Header parameters to be
             placed in the request header.
+        :param verify_ssl: Whether SSL verification is enabled.
         :param body: Request body.
         :param list post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param list auth_settings: Auth Settings names for the request.
-        :param response_type: Response data type.
         :param dict files: key -> filename, value -> filepath,
             for `multipart/form-data`.
-        :param bool async_req: execute request asynchronously
+        :param response_type: Response data type.
+        :param list auth_settings: Auth Settings names for the request.
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param collection_formats: dict of collection formats for path, query,
             header, and post parameters.
-        :param _preload_content: if False, the urllib3.HTTPResponse object will
-                                 be returned without reading/decoding response
-                                 data. Default is True.
-        :param _request_timeout: timeout setting for this request. If one
-                                 number provided, it will be total request
-                                 timeout. It can also be a pair (tuple) of
-                                 (connection, read) timeouts.
+        :param timeout: limit the amount of time that make http request
+        :param max_failed: the maximum number of retries allowed has been exceeded
+        :param retried: the number of retries for the HTTP request has failed
+        :param poll_latency: delay between HTTP retries
         :param _host: server/host defined in path or operation instead
-        :return:
-            If async_req parameter is True,
-            the request will be called asynchronously.
-            The method will return the request thread.
-            If parameter async_req is False or missing,
-            then the method will return the response directly.
+        :param valid_status: the HTTP request response has a valid status
+        :return: return the response directly.
         """
 
         config = self.configuration
@@ -410,7 +400,7 @@ class ApiClient(object):
             convert to string in iso8601 format.
         If obj is list, sanitize each element in the list.
         If obj is dict, return the dict.
-        If obj is OpenAPI model, return the properties dict.
+        If obj is model, return the properties dict.
 
         :param obj: The data to serialize.
         :return: The serialized form of data.
@@ -432,13 +422,13 @@ class ApiClient(object):
             obj_dict = obj
         else:
             # Convert model obj to dict except
-            # attributes `openapi_types`, `attribute_map`
+            # attributes `api_types`, `attribute_map`
             # and attributes which value is not None.
             # Convert attribute name to json key in
             # model definition for request.
             obj_dict = {
                 obj.attribute_map[attr]: getattr(obj, attr)
-                for attr, _ in six.iteritems(obj.openapi_types)
+                for attr, _ in six.iteritems(obj.api_types)
                 if getattr(obj, attr) is not None
             }
 
@@ -611,9 +601,7 @@ class ApiClient(object):
     def gen_sign(self, url, body=None, access_time=None):
         """generate authentication headers
 
-        :param method: http request method
         :param url: http resource path
-        :param query_string: query string
         :param body: request body
         :param access_time: UNIX timestamp in milliseconds
         :return: signature headers

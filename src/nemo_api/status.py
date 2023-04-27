@@ -23,7 +23,7 @@ class STATUS(IntEnum):
     NFT_MINT_CID_WAIT = 7
     NFT_REQUEST_MINT_CID_WAIT = 6
 
-    NFT_REQUEST_MINT_DAPP_WAIT = 5 #same as on request claim
+    NFT_REQUEST_MINT_DAPP_WAIT = 5
     
     FORWARD = 4
     TX_SUCCESS = 3
@@ -32,17 +32,17 @@ class STATUS(IntEnum):
     INPUT_INVALID = -1
     TX_FAILED = -3
 
-    NFT_REQUEST_MINT_DAPP_CANCELED = -5 #TODO: callback gameserver
-    NFT_REQUEST_MINT_CID_FAILED = -6 #TODO: recovery needed
-    NFT_MINT_CID_FAILED = -7 #TODO: recovery needed
+    NFT_REQUEST_MINT_DAPP_CANCELED = -5
+    NFT_REQUEST_MINT_CID_FAILED = -6
+    NFT_MINT_CID_FAILED = -7
 
     TX_SUBMIT_FAILED = -8
     TX_CONFIRM_FAILED = -9
 
-    NFT_MINT_FAILED = -10 #TODO: callback gameserver
-    NFT_REQUEST_MINT_FAILED = -11 #TODO: callback gameserver
+    NFT_MINT_FAILED = -10
+    NFT_REQUEST_MINT_FAILED = -11
     WAIT_MINT_CID_TIMEOUT = -12
-    UPGRADE_LAND_FAILED = -13 #TODO: callback gameserver
+    UPGRADE_LAND_FAILED = -13
     WAIT_BURN_BOX_TIMEOUT = -14
 
     RESP_WALLET_EXCEEDS_ALLOWANCE = -20

@@ -11,7 +11,7 @@ import async_timeout
 import logging
 logger = logging.getLogger(__name__)
 
-__headers__ = {} #TODO
+__headers__ = {}
 
 async def do_request(
     url,
@@ -105,19 +105,22 @@ class HTTPClientObject(object):
         poll_latency=3,
         valid_status=None
     ):
-        #TODO
         """Perform request.
 
         :param url: http request url. Default is `configuration.url`.
         :param method: http request method
+        :param query_params: query parameters in the url
         :param post_params: request post parameters,
                             `application/x-www-form-urlencoded`
                             and `multipart/form-data`
         :param body: request json body, for `application/json`
+        :param verify_ssl: Whether SSL verification is enabled.
         :param headers: http request headers
-        :param max_failed: max failed.
-        :param timeout: timeout setting for this request.
-        :param valid_status: valid status.
+        :param timeout: limit the amount of time that make http request
+        :param max_failed: the maximum number of retries allowed has been exceeded
+        :param retried: the number of retries for the HTTP request has failed
+        :param poll_latency: delay between HTTP retries
+        :param valid_status: the HTTP request response has a valid status
         """
 
         method = method.upper()
