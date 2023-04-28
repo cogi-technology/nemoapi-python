@@ -24,7 +24,7 @@ will be 5.15.2(the MAJOR version is incremented to denote breaking changes, but 
 version are identical to REST API's instead of resetting them to 0)
 
 If MAJOR version is incremented, make sure you read the release note on
-[Releases](https://nemoverse.io/)
+[Releases](https://gitlab.com/nemoverse/nemo_wallet_api_python/-/releases)
 page
 
 ## Requirements.

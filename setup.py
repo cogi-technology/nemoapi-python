@@ -34,12 +34,12 @@ setup(
     description='NEMOVERSE-API-SDK PyPI (Python Package Index) Package',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://gitlab.com/nemoverse/nemoapi-python',
+    url='https://gitlab.com/nemoverse/nemo_wallet_api_python',
     project_urls={
-        'Documentation': 'https://gitlab.com/nemoverse/nemoapi-python',
+        'Documentation': 'https://gitlab.com/nemoverse/nemo_wallet_api_python',
         'Bug Reports':
-        'https://gitlab.com/nemoverse/nemoapi-python/-/issues',
-        'Source Code': 'https://gitlab.com/nemoverse/nemoapi-python'
+        'https://gitlab.com/nemoverse/nemo_wallet_api_python/-/issues',
+        'Source Code': 'https://gitlab.com/nemoverse/nemo_wallet_api_python'
     },
     classifiers=[
         # see https://pypi.org/classifiers/
