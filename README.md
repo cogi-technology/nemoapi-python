@@ -66,7 +66,7 @@ Please follow the [installation procedure](#installation--usage) and then run th
 Create a key pair
 ```sh
 # Use the nemoversdk CLI to generate a key pair. The response will be a private key and a public key
-nemoversesdk dsa libsodium generate
+nemoverse-cli dsa libsodium generate
 # oB13FXaa1BiEiDaUGvuj/blJwj6SRl7JjkE/ApeQf08= auVgK8gSvFOgF5zWmQ5wWhFKImyl5/ka59dcRZtzcDA=
 ```
 

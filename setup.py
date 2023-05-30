@@ -63,7 +63,7 @@ setup(
         'dev': ['check-manifest'],
     },
     entry_points= {
-        'console_scripts': ['nemoversesdk=nemo_api.cli.main:main']
+        'console_scripts': ['nemoverse-cli=nemo_api.cli.main:main']
     },
     install_requires=REQUIRES
 )
