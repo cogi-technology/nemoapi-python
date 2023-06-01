@@ -58,13 +58,13 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[apiv2](../README.md#apiv2)
+[apiv2](./README.md#apiv2)
 
 ### HTTP request headers
 
 ### HTTP response details
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](./README.md#documentation-for-api-endpoints) [[Back to Model list]](./README.md#documentation-for-models) [[Back to README]](./README.md)
 
 # **user_info**
 > NemoIdAccount user_info(access_token)
@@ -114,13 +114,13 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[apiv2](../README.md#apiv2)
+[apiv2](./README.md#apiv2)
 
 ### HTTP request headers
 
 ### HTTP response details
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](./README.md#documentation-for-api-endpoints) [[Back to Model list]](./README.md#documentation-for-models) [[Back to README]](./README.md)
 
 # **relogin**
 > NemoIdAccount relogin(refresh_token, code_verifier)
@@ -172,11 +172,11 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[apiv2](../README.md#apiv2)
+[apiv2](./README.md#apiv2)
 
 ### HTTP request headers
 
 ### HTTP response details
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](./README.md#documentation-for-api-endpoints) [[Back to Model list]](./README.md#documentation-for-models) [[Back to README]](./README.md)
 

@@ -1,16 +1,16 @@
 # nemo_api.NftApi
 
-Method | HTTP request | Description
+Phương thức | Yêu cầu HTTP | Mô tả
 ------------- | ------------- | -------------
-[**mint**](NftApi.md#mint) | **POST** /nft/mint | Send a transaction to mint an NFT and transfer it to an account, executed by the minter. Get UUID of NFT if successful
-[**request_mint**](NftApi.md#request_mint) | **POST** /nft/request_mint | Send a transaction to mint an NFT and transfer it to an account, executed by the user. Get UUID of NFT if successful
+[**mint**](NftApi.md#mint) | **POST** /nft/mint | Gửi một giao dịch để tạo một NFT và chuyển nó cho một tài khoản, được thực thi bởi Minter. Nhận UUID của NFT nếu thành công
+[**request_mint**](NftApi.md#request_mint) | **POST** /nft/request_mint | Gửi một giao dịch để tạo một NFT và chuyển nó cho một tài khoản, được thực thi bởi người dùng. Nhận UUID của NFT nếu thành công
 
 # **mint**
 > str mint(recipient, metadata, callback)
 
-Mint an NFT.
+Đúc một NFT.
 
-### Example
+### Ví dụ
 
 ```python
 from __future__ import print_function
@@ -43,34 +43,34 @@ except Exception as e:
     print("Exception when calling NftApi->mint: %s\n" % e)
 ```
 
-### Parameters
+### Tham số
 
-Name | Type | Description  | Notes
+| Tên | Kiểu dữ liệu | Mô tả | Ghi chú |
 ------------- | ------------- | ------------- | -------------
- **recipient** | **str**| Account | 
- **metadata** | **dict**| Metadata object | 
- **callback** | **str**| Callback uri | 
+ **recipient** | **str**| Tài khoản | 
+ **metadata** | **dict**| Metadata của NFT | 
+ **callback** | **str**| Đường dẫn callback | 
 
-### Return type
+### Kiểu trả về
 
 **str**
 
-### Authorization
+### Xác thực
 
-[apiv2](../README.md#apiv2)
+[apiv2](./README.md#apiv2)
 
 ### HTTP request headers
 
-### HTTP response details
+### Chi tiết phản hồi của yêu cầu HTTP
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Quay lại đầu trang]](#) [[Quay lại danh sách API]](./README.md#tài-liệu-về-api-endpoints) [[Quay lại danh sách Model]](./README.md#tài-liệu-về-models) [[Quay lại README]](./README.md)
 
 # **request_mint**
 > str request_mint(recipient, metadata, callback)
 
-Request mint an NFT.
+Yêu cầu tạo một NFT.
 
-### Example
+### Ví dụ
 
 ```python
 from __future__ import print_function
@@ -103,24 +103,24 @@ except Exception as e:
     print("Exception when calling NftApi->request_mint: %s\n" % e)
 ```
 
-### Parameters
+### Tham số
 
-Name | Type | Description  | Notes
+| Tên | Kiểu dữ liệu | Mô tả | Ghi chú |
 ------------- | ------------- | ------------- | -------------
- **recipient** | **str**| Account | 
- **metadata** | **dict**| Metadata object | 
- **callback** | **str**| Callback uri | 
+ **recipient** | **str**| Tài khoản | 
+ **metadata** | **dict**| Metadata của NFT | 
+ **callback** | **str**| Đường dẫn callback | 
 
-### Return type
+### Kiểu trả về
 
-**str**
+**str** 
 
-### Authorization
+### Xác thực
 
-[apiv2](../README.md#apiv2)
+[apiv2](./README.md#apiv2)
 
 ### HTTP request headers
 
-### HTTP response details
+### Chi tiết phản hồi của yêu cầu HTTP
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Quay lại đầu trang]](#) [[Quay lại danh sách API]](./README.md#tài-liệu-về-api-endpoints) [[Quay lại danh sách Model]](./README.md#tài-liệu-về-models) [[Quay lại README]](./README.md)

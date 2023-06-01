@@ -68,13 +68,13 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[apiv2](../README.md#apiv2)
+[apiv2](./README.md#apiv2)
 
 ### HTTP request headers
 
 ### HTTP response details
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](./README.md#documentation-for-api-endpoints) [[Back to Model list]](./README.md#documentation-for-models) [[Back to README]](./README.md)
 
 # **request_mint**
 > str request_mint(recipient, land_id, level, land_x, land_y, metadata, callback)
@@ -136,13 +136,13 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[apiv2](../README.md#apiv2)
+[apiv2](./README.md#apiv2)
 
 ### HTTP request headers
 
 ### HTTP response details
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](./README.md#documentation-for-api-endpoints) [[Back to Model list]](./README.md#documentation-for-models) [[Back to README]](./README.md)
 
 # **mints**
 > list[object] mints(lands)
@@ -192,13 +192,13 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[apiv2](../README.md#apiv2)
+[apiv2](./README.md#apiv2)
 
 ### HTTP request headers
 
 ### HTTP response details
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](./README.md#documentation-for-api-endpoints) [[Back to Model list]](./README.md#documentation-for-models) [[Back to README]](./README.md)
 
 # **request_mints**
 > list[object] request_mints(lands)
@@ -248,13 +248,13 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[apiv2](../README.md#apiv2)
+[apiv2](./README.md#apiv2)
 
 ### HTTP request headers
 
 ### HTTP response details
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](./README.md#documentation-for-api-endpoints) [[Back to Model list]](./README.md#documentation-for-models) [[Back to README]](./README.md)
 
 # **request_cancelbuys**
 > list[object] request_cancelbuys(lands)
@@ -304,10 +304,10 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[apiv2](../README.md#apiv2)
+[apiv2](./README.md#apiv2)
 
 ### HTTP request headers
 
 ### HTTP response details
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](./README.md#documentation-for-api-endpoints) [[Back to Model list]](./README.md#documentation-for-models) [[Back to README]](./README.md)

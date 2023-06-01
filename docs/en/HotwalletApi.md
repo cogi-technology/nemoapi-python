@@ -55,13 +55,13 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[apiv2](../README.md#apiv2)
+[apiv2](./README.md#apiv2)
 
 ### HTTP request headers
 
 ### HTTP response details
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](./README.md#documentation-for-api-endpoints) [[Back to Model list]](./README.md#documentation-for-models) [[Back to README]](./README.md)
 
 # **charge**
 > tuple(InternalTransaction, AccountBalance) charge(account, amount)
@@ -113,13 +113,13 @@ tuple([**InternalTransaction**](InternalTransaction.md), [**AccountBalance**](Ac
 
 ### Authorization
 
-[apiv2](../README.md#apiv2)
+[apiv2](./README.md#apiv2)
 
 ### HTTP request headers
 
 ### HTTP response details
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](./README.md#documentation-for-api-endpoints) [[Back to Model list]](./README.md#documentation-for-models) [[Back to README]](./README.md)
 
 # **award**
 > tuple(InternalTransaction, AccountBalance) award(account, amount)
@@ -171,13 +171,13 @@ tuple([**InternalTransaction**](InternalTransaction.md), [**AccountBalance**](Ac
 
 ### Authorization
 
-[apiv2](../README.md#apiv2)
+[apiv2](./README.md#apiv2)
 
 ### HTTP request headers
 
 ### HTTP response details
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](./README.md#documentation-for-api-endpoints) [[Back to Model list]](./README.md#documentation-for-models) [[Back to README]](./README.md)
 
 # **get_allowance**
 > HotwalletAllowance get_allowance(account)
@@ -227,10 +227,10 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[apiv2](../README.md#apiv2)
+[apiv2](./README.md#apiv2)
 
 ### HTTP request headers
 
 ### HTTP response details
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](./README.md#documentation-for-api-endpoints) [[Back to Model list]](./README.md#documentation-for-models) [[Back to README]](./README.md)

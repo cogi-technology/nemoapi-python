@@ -1,16 +1,16 @@
 # nemo_api.NemoAccountApi
 
-Method | HTTP request | Description
+| Phương thức   | Yêu cầu HTTP     | Mô tả |
 ------------- | ------------- | -------------
-[**get_link**](NemoAccountApi.md#get_link) | **POST** /account/get_link | Get a list of Metamask addresses linked to Nemo Wallet
-[**get_nemo_wallet**](NemoAccountApi.md#get_nemo_wallet) | **POST** /account/get_nemo_wallet | Get the Nemo Wallet address that is linked from the Metamask address
+[**get_link**](NemoAccountApi.md#get_link) | **POST** /account/get_link | Lấy danh sách địa chỉ ví Metamask đã liên kết với Nemo wallet
+[**get_nemo_wallet**](NemoAccountApi.md#get_nemo_wallet) | **POST** /account/get_nemo_wallet | Lấy địa chỉ ví Nemo bằng địa chỉ ví Metamask đã liên kết
 
 # **get_link**
 > list[str] get_link(main_account)
 
-Get a list of Metamask addresses linked to Nemo Wallet.
+Lấy danh sách địa chỉ ví Metamask đã liên kết với Nemo wallet.
 
-### Example
+### Ví dụ
 
 ```python
 from __future__ import print_function
@@ -43,30 +43,30 @@ except Exception as e:
 
 ### Parameters
 
-Name | Type | Description  | Notes
+| Tên | Kiểu dữ liệu | Mô tả | Ghi chú |
 ------------- | ------------- | ------------- | -------------
- **main_account** | **str**| NEMO Wallet address | 
+ **main_account** | **str**| Địa chỉ ví NEMO | 
 
-### Return type
+### Kiểu kết quả trả về
 
 **list[str]**
 
-### Authorization
+### Xác thực
 
-[apiv2](../README.md#apiv2)
+[apiv2](./README.md#apiv2)
 
 ### HTTP request headers
 
-### HTTP response details
+### Chi tiết phản hồi của yêu cầu HTTP
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Quay lại đầu trang]](#) [[Quay lại danh sách API]](./README.md#tài-liệu-về-api-endpoints) [[Quay lại danh sách Model]](./README.md#tài-liệu-về-models) [[Quay lại README]](./README.md)
 
 # **get_nemo_wallet**
 > object get_nemo_wallet(sub_account)
 
-Get the Nemo Wallet address that is linked from the Metamask address.
+Lấy địa chỉ ví Nemo bằng địa chỉ ví Metamask đã liên kết.
 
-### Example
+### Ví dụ
 
 ```python
 from __future__ import print_function
@@ -99,20 +99,20 @@ except Exception as e:
 
 ### Parameters
 
-Name | Type | Description  | Notes
+| Tên | Kiểu dữ liệu | Mô tả | Ghi chú |
 ------------- | ------------- | ------------- | -------------
- **sub_account** | **str**| Metamask Wallet address | 
+ **sub_account** | **str**| Địa chỉ ví Metamasks | 
 
-### Return type
+### Kiểu kết quả trả về
 
 **object**
 
-### Authorization
+### Xác thực
 
-[apiv2](../README.md#apiv2)
+[apiv2](./README.md#apiv2)
 
 ### HTTP request headers
 
-### HTTP response details
+### Chi tiết phản hồi của yêu cầu HTTP
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Quay lại đầu trang]](#) [[Quay lại danh sách API]](./README.md#tài-liệu-về-api-endpoints) [[Quay lại danh sách Model]](./README.md#tài-liệu-về-models) [[Quay lại README]](./README.md)
