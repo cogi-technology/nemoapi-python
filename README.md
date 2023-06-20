@@ -6,8 +6,8 @@ This is the main README file for the **nemo-api** python. The project contains m
 
 The following languages are available in this project:
 
-- [English](./docs/en/README.md)
-- [Việt Nam](./docs/vi/README.md)
+- [English](https://github.com/cogi-technology/nemoapi-python/blob/master/docs/en/README.md)
+- [Việt Nam](https://github.com/cogi-technology/nemoapi-python/blob/master/docs/en/README.md)
 
 ## Getting Started
 

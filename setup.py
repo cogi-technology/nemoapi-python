@@ -8,14 +8,13 @@
 from setuptools import setup, find_packages  # noqa: H301
 
 NAME = "nemo-api"
-VERSION = "2.0.0"
 REQUIRES = [
     "urllib3 >= 1.26", 
     "six >= 1.10",
     "certifi",
     "python_dateutil",
-    "aiohttp==3.7.4.post0",
-    "ujson==4.3.0",
+    "aiohttp>=3.7.4",
+    "ujson>=4.3.0",
 ]
 # To install the library, run the following
 #
@@ -34,12 +33,12 @@ setup(
     description='NEMOVERSE-API-SDK PyPI (Python Package Index) Package',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://gitlab.com/nemoverse/nemo_wallet_api_python',
+    url='https://github.com/cogi-technology/nemoapi-python',
     project_urls={
-        'Documentation': 'https://gitlab.com/nemoverse/nemo_wallet_api_python',
+        'Documentation': 'https://github.com/cogi-technology/nemoapi-python#readme',
         'Bug Reports':
-        'https://gitlab.com/nemoverse/nemo_wallet_api_python/-/issues',
-        'Source Code': 'https://gitlab.com/nemoverse/nemo_wallet_api_python'
+        'https://github.com/cogi-technology/nemoapi-python/issues',
+        'Source Code': 'https://github.com/cogi-technology/nemoapi-python'
     },
     classifiers=[
         # see https://pypi.org/classifiers/
