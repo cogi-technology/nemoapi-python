@@ -124,3 +124,59 @@ except Exception as e:
 ### Chi tiết phản hồi của yêu cầu HTTP
 
 [[Quay lại đầu trang]](#) [[Quay lại danh sách API]](./README.md#tài-liệu-về-api-endpoints) [[Quay lại danh sách Model]](./README.md#tài-liệu-về-models) [[Quay lại README]](./README.md)
+
+# **mints**
+> list[object] mints(nfts)
+
+Đúc hàng loạt NFT.
+
+### Example
+
+```python
+from __future__ import print_function
+import nemo_api
+
+KEY_ID = "<key id>"
+PRIVATE_KEY = "<private key>"
+PUBLIC_KEY = "<public key>"
+HOST = "<host>"
+NFTs = "<NFTs>"
+
+configuration = nemo_api.ApiConfiguration(
+    key_id=KEY_ID,
+    private_key=PRIVATE_KEY,
+    public_key=PUBLIC_KEY,
+    host = HOST
+)
+
+api_client = nemo_api.ApiClient(configuration)
+# Create an instance of the API class
+api_instance = nemo_api.NftApi(api_client)
+
+try:
+    # List currencies for lending
+    api_response = api_instance.mints(NFTs)
+    print(api_response)
+except Exception as e:
+    print("Exception when calling NftApi->mints: %s\n" % e)
+```
+
+### Tham số
+
+| Tên | Kiểu dữ liệu | Mô tả | Ghi chú |
+------------- | ------------- | ------------- | -------------
+ **payload** | **list[dict]**| Danh sách các tham số của mint | 
+
+### Kiểu trả về
+
+**list[object]**
+
+### Xác thực
+
+[apiv2](./README.md#apiv2)
+
+### HTTP request headers
+
+### Chi tiết phản hồi của yêu cầu HTTP
+
+[[Quay lại đầu trang]](#) [[Quay lại danh sách API]](./README.md#tài-liệu-về-api-endpoints) [[Quay lại danh sách Model]](./README.md#tài-liệu-về-models) [[Quay lại README]](./README.md)

@@ -91,8 +91,6 @@ Class | Method | HTTP request | Description
 *LandApi* | [**mints**](./LandApi.md#mints) | **POST** /land/mints | Send batch transaction to mint multiple NFT Land, executed by the minter
 *LandApi* | [**request_mints**](./LandApi.md#request_mints) | **POST** /land/request_mints | Send batch transaction to mint multiple NFT Land, executed by the user
 *LandApi* | [**request_cancelbuys**](./LandApi.md#request_cancelbuys) | **POST** /land/request_cancelbuys | Send batch request cancel buy
-*MysteryboxApi* | [**mint**](./MysteryboxApi.md#mint) | **POST** /mysterybox/mint | Send a transaction to mint an NFT BOX and transfer it to an account, executed by the minter. Get UUID of NFT if successful
-*MysteryboxApi* | [**mints**](./MysteryboxApi.md#mints) | **POST** /mysterybox/mints | Send batch transaction to mint multiple NFT BOX, executed by the minter
 *NemoAccountApi* | [**get_link**](./NemoAccountApi.md#get_link) | **POST** /account/get_link | Get a list of Metamask addresses linked to Nemo Wallet
 *NemoAccountApi* | [**get_nemo_wallet**](./NemoAccountApi.md#get_nemo_wallet) | **POST** /account/get_nemo_wallet | Get the Nemo Wallet address that is linked from the Metamask address
 *NemoIdApi* | [**login**](./NemoIdApi.md#login) | **POST** /nemoid/login | Login and get NemoIdAccount's information

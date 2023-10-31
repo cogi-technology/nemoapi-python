@@ -41,3 +41,15 @@ class NftApi(object):
             response_type='str',
         )
         return res
+    
+    
+    async def mints(self, payload: list[dict]):
+        auth_settings = ['apiv2']
+        res = await self.api_client.call_api(
+            resource_path='/nft/mints',
+            method='POST',
+            body=payload,
+            auth_settings=auth_settings,
+            response_type='list[object]',
+        )
+        return res

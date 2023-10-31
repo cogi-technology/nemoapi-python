@@ -94,8 +94,6 @@ Lớp | Phương thức | Yêu cầu HTTP | Mô tả
 *LandApi* | [**mints**](./LandApi.md#mints) | **POST** /land/mints | Gửi giao dịch để đúc nhiều NFT Land, do Minter thực hiện
 *LandApi* | [**request_mints**](./LandApi.md#request_mints) | **POST** /land/request_mints | Gửi giao dịch để đúc nhiều NFT Land, do người dùng thực hiện
 *LandApi* | [**request_cancelbuys**](./LandApi.md#request_cancelbuys) | **POST** /land/request_cancelbuys | Gửi yêu cầu hủy bỏ các giao dịch mua
-*MysteryboxApi* | [**mint**](./MysteryboxApi.md#mint) | **POST** /mysterybox/mint | Gửi giao dịch để đúc một tài sản phi tập trung (NFT) BOX và chuyển nó vào tài khoản, do Minter thực hiện. Nhận UUID của NFT nếu thành công
-*MysteryboxApi* | [**mints**](./MysteryboxApi.md#mints) | **POST** /mysterybox/mints | Gửi giao dịch để đúc nhiều NFT BOX, do Minter thực hiện
 *NemoAccountApi* | [**get_link**](./NemoAccountApi.md#get_link) | **POST** /account/get_link | Lấy danh sách địa chỉ Metamask được liên kết với Ví Nemo
 *NemoAccountApi* | [**get_nemo_wallet**](./NemoAccountApi.md#get_nemo_wallet) | **POST** /account/get_nemo_wallet | Lấy địa chỉ Ví Nemo được liên kết từ địa chỉ Metamask
 *NemoIdApi* | [**login**](./NemoIdApi.md#login) | **POST** /nemoid/login | Đăng nhập và lấy thông tin tài khoản của NemoId

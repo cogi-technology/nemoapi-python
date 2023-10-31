@@ -124,3 +124,59 @@ Name | Type | Description  | Notes
 ### HTTP response details
 
 [[Back to top]](#) [[Back to API list]](./README.md#documentation-for-api-endpoints) [[Back to Model list]](./README.md#documentation-for-models) [[Back to README]](./README.md)
+
+# **mints**
+> list[object] mints(nfts)
+
+Mint batch NFT.
+
+### Example
+
+```python
+from __future__ import print_function
+import nemo_api
+
+KEY_ID = "<key id>"
+PRIVATE_KEY = "<private key>"
+PUBLIC_KEY = "<public key>"
+HOST = "<host>"
+NFTs = "<NFTs>"
+
+configuration = nemo_api.ApiConfiguration(
+    key_id=KEY_ID,
+    private_key=PRIVATE_KEY,
+    public_key=PUBLIC_KEY,
+    host = HOST
+)
+
+api_client = nemo_api.ApiClient(configuration)
+# Create an instance of the API class
+api_instance = nemo_api.NftApi(api_client)
+
+try:
+    # List currencies for lending
+    api_response = api_instance.mints(NFTs)
+    print(api_response)
+except Exception as e:
+    print("Exception when calling NftApi->mints: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **payload** | **list[dict]**| List of mint parameters | 
+
+### Return type
+
+**list[object]**
+
+### Authorization
+
+[apiv2](./README.md#apiv2)
+
+### HTTP request headers
+
+### HTTP response details
+
+[[Back to top]](#) [[Back to API list]](./README.md#documentation-for-api-endpoints) [[Back to Model list]](./README.md#documentation-for-models) [[Back to README]](./README.md)

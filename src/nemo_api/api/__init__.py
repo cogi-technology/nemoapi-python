@@ -8,7 +8,6 @@ from __future__ import absolute_import
 from nemo_api.api.bridge_api import BridgeApi
 from nemo_api.api.hotwallet_api import HotwalletApi
 from nemo_api.api.land_api import LandApi
-from nemo_api.api.mysterybox_api import MysteryboxApi
 from nemo_api.api.nemoaccount_api import NemoAccountApi
 from nemo_api.api.nemoid_api import NemoIdApi
 from nemo_api.api.nft_api import NftApi
