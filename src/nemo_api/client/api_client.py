@@ -222,6 +222,11 @@ class ApiClient(object):
         if not _return_http_data_only:
             return response_data
         
+        if isinstance(response_data, list):
+            if response_type:
+                return self.deserialize(response_data, response_type)
+            return response_data
+        
         if response_data is None or not isinstance(response_data, dict):
             raise ApiReponseError("invalid reponse {0}".format(response_data))
         if int(response_data.get('status')) < 0 \
